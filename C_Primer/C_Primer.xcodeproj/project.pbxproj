@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		524871832123194800076ACD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 524871822123194800076ACD /* main.cpp */; };
+		5248718E2123216E00076ACD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5248718D2123216E00076ACD /* main.cpp */; };
 		52C0EE09211B40EC00B41490 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52C0EE08211B40EC00B41490 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5248717E2123194800076ACD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		524871892123216E00076ACD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -35,12 +45,21 @@
 /* Begin PBXFileReference section */
 		524871802123194800076ACD /* 002_IoStream */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 002_IoStream; sourceTree = BUILT_PRODUCTS_DIR; };
 		524871822123194800076ACD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5248718B2123216E00076ACD /* 003_While */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 003_While; sourceTree = BUILT_PRODUCTS_DIR; };
+		5248718D2123216E00076ACD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		52C0EE05211B40EC00B41490 /* 001_HelloWork */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 001_HelloWork; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C0EE08211B40EC00B41490 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5248717D2123194800076ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524871882123216E00076ACD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,11 +84,20 @@
 			path = 002_IoStream;
 			sourceTree = "<group>";
 		};
+		5248718C2123216E00076ACD /* 003_While */ = {
+			isa = PBXGroup;
+			children = (
+				5248718D2123216E00076ACD /* main.cpp */,
+			);
+			path = 003_While;
+			sourceTree = "<group>";
+		};
 		52C0EDFC211B40EC00B41490 = {
 			isa = PBXGroup;
 			children = (
 				52C0EE07211B40EC00B41490 /* 001_HelloWork */,
 				524871812123194800076ACD /* 002_IoStream */,
+				5248718C2123216E00076ACD /* 003_While */,
 				52C0EE06211B40EC00B41490 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +107,7 @@
 			children = (
 				52C0EE05211B40EC00B41490 /* 001_HelloWork */,
 				524871802123194800076ACD /* 002_IoStream */,
+				5248718B2123216E00076ACD /* 003_While */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +140,23 @@
 			productReference = 524871802123194800076ACD /* 002_IoStream */;
 			productType = "com.apple.product-type.tool";
 		};
+		5248718A2123216E00076ACD /* 003_While */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5248718F2123216E00076ACD /* Build configuration list for PBXNativeTarget "003_While" */;
+			buildPhases = (
+				524871872123216E00076ACD /* Sources */,
+				524871882123216E00076ACD /* Frameworks */,
+				524871892123216E00076ACD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 003_While;
+			productName = 003_While;
+			productReference = 5248718B2123216E00076ACD /* 003_While */;
+			productType = "com.apple.product-type.tool";
+		};
 		52C0EE04211B40EC00B41490 /* 001_HelloWork */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C0EE0C211B40EC00B41490 /* Build configuration list for PBXNativeTarget "001_HelloWork" */;
@@ -140,6 +186,9 @@
 					5248717F2123194800076ACD = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					5248718A2123216E00076ACD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					52C0EE04211B40EC00B41490 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -159,6 +208,7 @@
 			targets = (
 				52C0EE04211B40EC00B41490 /* 001_HelloWork */,
 				5248717F2123194800076ACD /* 002_IoStream */,
+				5248718A2123216E00076ACD /* 003_While */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +219,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				524871832123194800076ACD /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524871872123216E00076ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5248718E2123216E00076ACD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +251,24 @@
 			name = Debug;
 		};
 		524871852123194800076ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JH28QR844Q;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		524871902123216E00076ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JH28QR844Q;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		524871912123216E00076ACD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +412,15 @@
 			buildConfigurations = (
 				524871842123194800076ACD /* Debug */,
 				524871852123194800076ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5248718F2123216E00076ACD /* Build configuration list for PBXNativeTarget "003_While" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524871902123216E00076ACD /* Debug */,
+				524871912123216E00076ACD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
