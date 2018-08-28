@@ -109,6 +109,11 @@
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
+		<key>022_PassByValueParameter.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>

@@ -5,7 +5,7 @@
 //  Created by John on 2018/8/28.
 //  Copyright © 2018年 C++. All rights reserved.
 //
-
+//函数基础
 #include <iostream>
 using namespace std;
 
