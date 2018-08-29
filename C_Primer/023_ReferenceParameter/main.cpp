@@ -8,6 +8,23 @@
 //传引用参数
 #include <iostream>
 using namespace std;
+using std::string;
+
+//返回多个参数
+string::size_type find_char(const string &s,char c,string::size_type &occurs){
+    auto ret = s.size();
+    occurs = 0;
+    for (decltype(ret) i = 0; i != s.size(); ++i) {
+        if(s[i] == c){
+            if(ret == s.size()){
+                ret = i;
+            }
+            occurs ++ ;
+        }
+    }
+    return ret; //隐式返回occurs
+}
+
 
 void reset(int &i){
     i = 0;
@@ -27,5 +44,10 @@ int main(int argc, const char * argv[]) {
     reset(resetI);
     cout << "resetI is " << resetI << endl;
     
+    string s = "abcdeeoffdos";
+    string::size_type ctr;
+    auto index = find_char(s, 'o', ctr);    //index = 首次出现的下标 , ctr保存出现的次数
+    cout << "index is " << index << endl;
+    cout << "ctr is " << ctr << endl;
     return 0;
 }
